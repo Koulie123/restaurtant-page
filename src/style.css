@@ -1,0 +1,44 @@
+:root {
+    --indego-50: #eef2ff;
+    --indego-100: #e0e7ff;
+}
+
+.header {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    background-color: #a78bfa;
+    color: #fff7ed;
+    height: 40px;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+
+}
+.header nav {
+    
+}
+nav button {
+    width: 90%;
+    height: 90%;
+    padding: .5rem;
+    border: 0;
+    border-radius: 0;
+}
+.content {
+    display: grid;
+    grid-template-columns: 1fr clamp(400px, 30rem, 800px) 1fr;
+    background-color: var(--indego-100);
+}
+
+.center-section {
+    grid-column: 2/3;
+    background-color: var(--indego-50);
+}
+.restaurant-title {
+    display: flex;
+    justify-content: center;
+    background-color: #c4b5fd;
+    padding: 8px;
+    margin: 10px;
+    border-radius: 8px;
+}
