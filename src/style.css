@@ -33,12 +33,22 @@ nav button {
 .center-section {
     grid-column: 2/3;
     background-color: var(--indego-50);
+    display: grid;
+    grid-template-columns: 1fr 90% 1fr;
+    gap: 15px;
+}
+.center-section > * {
+    grid-column: 2/3;
 }
 .restaurant-title {
     display: flex;
     justify-content: center;
     background-color: #c4b5fd;
     padding: 8px;
-    margin: 10px;
+    margin-top: 10px;
     border-radius: 8px;
+}
+.main-image {
+    width: 100%;
+    aspect-ratio: 1;
 }
