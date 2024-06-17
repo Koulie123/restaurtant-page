@@ -64,5 +64,6 @@ menuButton.addEventListener('click', () => {
 })
 const aboutButton = document.querySelector('#about-button');
 aboutButton.addEventListener('click', () => {
+    console.log('about button clicked');
     generateAboutPage(centerMainDiv);
 })
