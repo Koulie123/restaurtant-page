@@ -1,7 +1,7 @@
 import './style.css';
 import generateMenuPage from './menu-items.js';
 import generateHomePage from './home-page.js';
-
+import generateAboutPage from './about-page.js';
 
 
 
@@ -63,3 +63,6 @@ menuButton.addEventListener('click', () => {
     generateMenuPage(centerMainDiv);
 })
 const aboutButton = document.querySelector('#about-button');
+aboutButton.addEventListener('click', () => {
+    generateAboutPage(centerMainDiv);
+})
