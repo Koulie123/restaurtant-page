@@ -25,7 +25,12 @@ export default function generateHomePage(parent) {
 
     //creating the "greatness of the restaurant paragraph"
     const greatnessParagraph = document.createElement('div');
-    greatnessParagraph.classList.add('greatness-of-restaurant');
+    greatnessParagraph.classList.add('content-paragraph');
     greatnessParagraph.textContent = 'This is undoubtably one of the greatest restaurants to ever be created!';
     parent.appendChild(greatnessParagraph);
+
+    const extraParagraph = document.createElement('div');
+    extraParagraph.classList.add('content-paragraph');
+    extraParagraph.textContent =  "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum convallis vulputate tellus sit amet aliquam. Suspendisse non risus quis metus tristique ultricies vel sit amet augue. Sed volutpat, massa sed ultricies eleifend, leo ipsum aliquam velit, et varius augue libero ut sapien. Fusce tellus ipsum, suscipit gravida volutpat quis, mollis at ipsum. Nunc tempus justo quis ipsum varius, nec fermentum orci convallis. Vivamus nec tincidunt purus, et interdum est. Duis venenatis pretium sem. Nunc arcu erat, dictum vel dapibus ut, venenatis ut elit. Nunc molestie convallis risus, eget ultricies ipsum ultrices at. ";
+    parent.appendChild(extraParagraph);
 }

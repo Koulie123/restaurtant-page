@@ -14,16 +14,19 @@ html, body {
     background-color: #a78bfa;
     color: #fff7ed;
     padding-top: 8px;
-    padding-bottom: 2px;
+    padding-bottom: 0px;
+    box-sizing: border-box;
+    margin-bottom: 0px;;
     height: 40px;
     gap: 20px;
     justify-content: center;
     align-items: center;
 
 }
-/* .header nav {
-    
-} */
+.header nav button {
+    border-radius: 10px 10px 0% 0%;
+    background-color: #fde68a;
+}
 nav button {
     width: 90%;
     height: 90%;
@@ -33,7 +36,7 @@ nav button {
 }
 .content {
     display: grid;
-    grid-template-columns: 1fr clamp(400px, 30rem, 800px) 1fr;
+    grid-template-columns: 1fr clamp(400px, 30rem, 90%) 1fr;
     background-color: var(--indego-100);
 
 }
