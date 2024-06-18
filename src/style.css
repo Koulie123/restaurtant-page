@@ -1,9 +1,11 @@
 :root {
     --indego-50: #eef2ff;
     --indego-100: #e0e7ff;
+
 }
 html, body {
     height: 100%;
+    margin: 0;
 }
 
 .header {
@@ -11,6 +13,8 @@ html, body {
     grid-template-columns: repeat(5, 1fr);
     background-color: #a78bfa;
     color: #fff7ed;
+    padding-top: 8px;
+    padding-bottom: 2px;
     height: 40px;
     gap: 20px;
     justify-content: center;
@@ -34,6 +38,7 @@ nav button {
 
 }
 
+
 .center-section {
     grid-column: 2/3;
     background-color: var(--indego-50);
@@ -44,6 +49,11 @@ nav button {
 }
 .center-section > * {
     grid-column: 2/3;
+}
+.content-header {
+    display: flex;
+    justify-content: center;
+    text-align: center;
 }
 .restaurant-title {
     display: flex;

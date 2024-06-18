@@ -5,6 +5,7 @@ export default function generateHomePage(parent) {
 
 
     const contentHeader = document.createElement('div');
+    contentHeader.classList.add('content-header');
     const headerH2 = document.createElement('h2');
 
     //creating the header of the main page
