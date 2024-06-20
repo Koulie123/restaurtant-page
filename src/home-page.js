@@ -1,4 +1,4 @@
-import mainImage from './images/dubai-image.jpg';
+import mainImage from './images/Pizzeria.jpg';
 
 export default function generateHomePage(parent) {
     parent.innerHTML = '';

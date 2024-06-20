@@ -1,6 +1,9 @@
 :root {
     --indego-50: #eef2ff;
     --indego-100: #e0e7ff;
+    --indego-700: #4338ca;
+    --slate-900: #0f172a;
+    --slate-800: #1e293b;
 
 }
 html, body {
@@ -11,13 +14,13 @@ html, body {
 .header {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
-    background-color: #a78bfa;
-    color: #fff7ed;
+    background-color: var(--slate-900);
+    color: white;
     padding-top: 8px;
     padding-bottom: 0px;
     box-sizing: border-box;
     margin-bottom: 0px;;
-    height: 40px;
+    height: 50px;
     gap: 20px;
     justify-content: center;
     align-items: center;
@@ -25,7 +28,9 @@ html, body {
 }
 .header nav button {
     border-radius: 10px 10px 0% 0%;
-    background-color: #fde68a;
+    background-color: var(--indego-700);
+    color: white;
+    font-weight: 700;
 }
 nav button {
     width: 90%;
@@ -37,8 +42,8 @@ nav button {
 .content {
     display: grid;
     grid-template-columns: 1fr clamp(400px, 30rem, 90%) 1fr;
-    background-color: var(--indego-100);
-
+    background-color: var(--slate-800);
+    min-height: 1000px;
 }
 
 
@@ -47,7 +52,7 @@ nav button {
     background-color: var(--indego-50);
     display: grid;
     grid-template-columns: 1fr 90% 1fr;
-    grid-template-rows: repeat(autofit, clamp(100px, 200px, 250px));
+    grid-template-rows: repeat(auto, clamp(100px, 200px, 250px));
     gap: 15px;
 }
 .center-section > * {
@@ -69,6 +74,9 @@ nav button {
 .main-image {
     width: 100%;
     aspect-ratio: 1;
+}
+.restaurant-main-pic {
+    height: 460px;
 }
 
 .menu-header {
@@ -97,6 +105,8 @@ nav button {
     font-size: .9rem;
     grid-column: 2/3;
     grid-row: 1/2;
+    display: flex;
+    justify-content: right;
 }
 .menu-item-description {
     font-size: 0.9rem;
