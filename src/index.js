@@ -6,7 +6,6 @@ import generateAboutPage from './about-page.js';
 
 
 
-
 const contentSection = document.querySelector("#content");
 const centerMainDiv = document.createElement('div');
 centerMainDiv.classList.add('center-section');
@@ -66,4 +65,11 @@ const aboutButton = document.querySelector('#about-button');
 aboutButton.addEventListener('click', () => {
     console.log('about button clicked');
     generateAboutPage(centerMainDiv);
+})
+
+
+const Logo = document.querySelector('.restaurant-logo');
+Logo.addEventListener('click', () => {
+    console.log("Logo Clicked");
+    generateHomePage(centerMainDiv);
 })

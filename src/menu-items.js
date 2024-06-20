@@ -47,7 +47,7 @@ export default function generateMenuPage(parent) {
         new MenuItem("Fries", "app", "A big backet of fries.", "$3.99"),
         new MenuItem("Greek Salad", "app", "Made with fresh tomatoes, cucumber, onions and feta", "$6.99"),
         new MenuItem("Caesar Salad", "app", "Classic Caesar Salad", "$4.00"),
-        new MenuItem("Margherita Pizza", "pizza", "Made with slized mozzarella, basil, and olive oil", "$9:50"),
+        new MenuItem("Margherita Pizza", "pizza", "Made with slized mozzarella, basil, and olive oil", "$9.50"),
         new MenuItem("Marinara Pizza", "pizza", "Made with garlic, oregano, and olive oil", "$8.00"),
         new MenuItem("Dos Equis", "drink", "A very interesting drink for interesting people", "$3.50"),
         new MenuItem("Coca Cola", "drink", "Coco Cola Classic", "$1.00"),
@@ -56,6 +56,7 @@ export default function generateMenuPage(parent) {
     ];
 
     const appitizerHeader = document.createElement('div');
+    appitizerHeader.classList.add('menu-header');
     appitizerHeader.classList.add('menu-header');
     appitizerHeader.textContent = 'Appitizers';
     parent.appendChild(appitizerHeader);
