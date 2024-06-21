@@ -21,17 +21,23 @@ html, body {
 .header {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: 40px 40px;
     background-color: var(--slate-900);
     color: white;
     padding-top: 8px;
     padding-bottom: 0px;
     box-sizing: border-box;
     margin-bottom: 0px;;
-    height: 60px;
-    gap: 20px;
+    height: 55px;
+    gap: 4px;
     justify-content: center;
     align-items: center;
 
+}
+@media (max-width: 680px) {
+    .header {
+        grid-template-columns: repeat(4, 1fr);
+    }
 }
 .header nav button {
     border-radius: 10px 10px 0% 0%;
@@ -39,6 +45,7 @@ html, body {
     color: white;
     font-weight: 700;
 }
+
 nav button {
     width: 90%;
     height: 90%;
@@ -50,10 +57,11 @@ nav button {
 .restaurant-logo {
     font-family: 'sedan-SC';
     font-size: 2rem;
+    width: 12rem;
 }
 .content {
     display: grid;
-    grid-template-columns: 1fr clamp(400px, 30rem, 90%) 1fr;
+    grid-template-columns: 1fr clamp(400px, 34rem, 90%) 1fr;
     background-color: var(--slate-800);
     min-height: 1000px;
 }
@@ -64,8 +72,10 @@ nav button {
     background-color: var(--indego-50);
     display: grid;
     grid-template-columns: 1fr 90% 1fr;
-    grid-template-rows: repeat(auto, clamp(100px, 200px, 250px));
+    /* grid-template-rows: repeat(auto, clamp(100px, 200px, 250px)); */
+    grid-template-rows: repeat(auto-fit, auto);
     gap: 15px;
+
     padding-top: 1rem;
 }
 .center-section > * {
