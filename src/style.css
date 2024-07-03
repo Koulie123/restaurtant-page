@@ -38,6 +38,11 @@ html, body {
     .header {
         grid-template-columns: repeat(4, 1fr);
     }
+    .content {
+        grid-template-columns: 1fr;
+        box-sizing: border-box;
+        padding-right: .3rem;
+    }
 }
 .header nav button {
     border-radius: 10px 10px 0% 0%;
@@ -58,6 +63,7 @@ nav button {
     font-family: 'sedan-SC';
     font-size: 2rem;
     width: 12rem;
+    padding-left: 0.2rem;
 }
 .content {
     display: grid;
